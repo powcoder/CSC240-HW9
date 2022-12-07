@@ -1,0 +1,87 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{fullpage}
+\usepackage{comment}
+\excludecomment{solution}
+\includecomment{question}
+\excludecomment{ignore}
+\setlength{\parskip}{1ex}
+\def\nats {{\mathbb N}}
+\def\ints {{\mathbb Z}}
+\newcommand{\Implies}{\mbox{ IMPLIES }}
+\newcommand{\oor}{\mbox{ OR }}
+\newcommand{\aand}{\mbox{ AND }}
+\newcommand{\Not}{\mbox{ NOT }}
+\newcommand{\iimp}{\mbox{ IMPLIES }}
+\newcommand{\True}{\mbox{True}}
+\newcommand{\False}{\mbox{False}}
+\newcommand{\reg}[1]{r_\mbox{#1}}
+\newcommand{\lang}[1]{\mathscr{L}(#1)}
+
+
+\begin{document}
+\begin{center}
+Solutions to
+
+{\bf \Large \bf CSC240 Winter 2021 Homework Assignment 9}\\
+\end{center}
+
+
+\noindent
+{\bf My name and student number:}
+
+\medskip
+
+\noindent
+{\bf The list of people with whom I discussed this homework assignment:}
+
+\medskip
+
+\begin{enumerate}
+\item
+\begin{question}
+Construct a deterministic finite automaton that accepts the
+language consisting of every string in $\{0,1\}^+$ that does not contain
+the substring 011.
+For example, 0101 should be accepted by your finite automaton, but $\lambda$ and 0110 should be rejected.
+
+\begin{itemize}
+\item
+Express your finite automaton as a 5 tuple.
+\item
+Draw your finite automaton.
+\end{itemize}
+\end{question}
+
+\begin{solution}
+{\bf Solution}:\\
+
+\begin{center}
+\includegraphics{dfa.pdf}
+\end{center}
+\end{solution}
+
+\item
+\begin{question}
+For each state $q$ in your finite automaton, give a regular expression $r_q$ that describes 
+the set of strings in $\{0,1\}^*$ that take your finite automaton from its initial state to $q$.
+Remember that the only symbols you can use in your regular expressions are 0, 1, (,  ), $\cdot$, $+$,  and $*$.
+\end{question}
+
+\begin{solution}
+{\bf Solution}:\\
+\end{solution}
+
+\item
+\begin{question}
+Give a careful proof using induction that your answers for questions 1 and 2 are correct.	
+\end{question}
+
+\begin{solution}
+{\bf Solution}:
+
+\end{solution}
+\end{enumerate}
+\end{document}
